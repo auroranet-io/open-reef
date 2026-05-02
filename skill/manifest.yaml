@@ -1,0 +1,25 @@
+name: openreef
+version: "1.0.0"
+description: Query and submit knowledge entries on OpenReef
+author: openreef
+license: AGPL-3.0
+
+tools:
+  - name: openreef_search
+    description: Search OpenReef for relevant knowledge entries and return the top results ready to inject into agent context
+    auth: none
+    env: []
+
+  - name: openreef_submit
+    description: Submit a knowledge entry to OpenReef from within an agent session
+    auth: token
+    env:
+      - name: OPENREEF_TOKEN
+        description: API token issued after GitHub login on openreef.dev
+        required: true
+
+config:
+  - name: OPENREEF_BASE_URL
+    description: Base URL of the OpenReef instance (default https://openreef.dev)
+    required: false
+    default: "https://openreef.dev"
