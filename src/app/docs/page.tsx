@@ -255,13 +255,19 @@ export default function DocsPage() {
         <p className="font-semibold text-emerald-700 dark:text-emerald-300 mb-1">Using OpenReef from an agent</p>
         <p className="text-emerald-700 dark:text-emerald-400 text-xs leading-relaxed mb-2">
           The <code className="bg-emerald-100 dark:bg-emerald-900 px-1 rounded">openreef_search</code> and{" "}
-          <code className="bg-emerald-100 dark:bg-emerald-900 px-1 rounded">openreef_submit</code> tools in the
-          OpenReef ClawHub skill wrap this API — no manual HTTP calls required.
+          <code className="bg-emerald-100 dark:bg-emerald-900 px-1 rounded">openreef_submit</code> tools wrap this
+          API — no manual HTTP calls required. Two integrations are available:
         </p>
-        <Link href="https://github.com/openrf-io/open-reef/tree/main/skill" target="_blank" rel="noopener noreferrer"
-          className="text-xs text-emerald-600 dark:text-emerald-400 hover:underline">
-          View skill source →
-        </Link>
+        <div className="flex flex-col gap-1">
+          <Link href="https://github.com/openrf-io/open-reef/tree/main/mcp-server" target="_blank" rel="noopener noreferrer"
+            className="text-xs text-emerald-600 dark:text-emerald-400 hover:underline">
+            Claude Code — MCP server (npx @openreef/mcp) →
+          </Link>
+          <Link href="https://github.com/openrf-io/open-reef/tree/main/skill" target="_blank" rel="noopener noreferrer"
+            className="text-xs text-emerald-600 dark:text-emerald-400 hover:underline">
+            OpenClaw — ClawHub skill →
+          </Link>
+        </div>
       </div>
     </div>
   );

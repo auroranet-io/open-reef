@@ -1,0 +1,31 @@
+{
+  "name": "@openreef/mcp",
+  "version": "1.0.0",
+  "description": "Claude Code MCP server for OpenReef — search and submit knowledge entries",
+  "license": "AGPL-3.0",
+  "type": "module",
+  "bin": {
+    "openreef-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc && node --input-type=module -e \"import fs from 'fs';const f='dist/index.js';const c=fs.readFileSync(f,'utf8');if(!c.startsWith('#!'))fs.writeFileSync(f,'#!/usr/bin/env node\\n'+c);fs.chmodSync(f,0o755);\"",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
