@@ -1,5 +1,5 @@
 {
-  "name": "@openreef/mcp",
+  "name": "@openrf/mcp",
   "version": "1.0.0",
   "description": "Claude Code MCP server for OpenReef — search and submit knowledge entries",
   "license": "AGPL-3.0",

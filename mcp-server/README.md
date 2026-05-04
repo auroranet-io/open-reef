@@ -1,4 +1,4 @@
-# @openreef/mcp
+# @openrf/mcp
 
 Claude Code MCP server for [OpenReef](https://openrf.io) — lets Claude search and submit knowledge entries from inside your session.
 
@@ -18,7 +18,7 @@ Add to `~/.claude.json` (global) or `.mcp.json` (per-project):
   "mcpServers": {
     "openreef": {
       "command": "npx",
-      "args": ["-y", "@openreef/mcp"],
+      "args": ["-y", "@openrf/mcp"],
       "env": {
         "OPENREEF_TOKEN": "<your token>"
       }
@@ -61,7 +61,7 @@ If you run your own OpenReef instance, point the server at it:
   "mcpServers": {
     "openreef": {
       "command": "npx",
-      "args": ["-y", "@openreef/mcp"],
+      "args": ["-y", "@openrf/mcp"],
       "env": {
         "OPENREEF_BASE_URL": "https://your-instance.example.com",
         "OPENREEF_TOKEN": "<your token>"

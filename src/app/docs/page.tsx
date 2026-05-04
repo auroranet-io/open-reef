@@ -261,7 +261,7 @@ export default function DocsPage() {
         <div className="flex flex-col gap-1">
           <Link href="https://github.com/openrf-io/open-reef/tree/main/mcp-server" target="_blank" rel="noopener noreferrer"
             className="text-xs text-emerald-600 dark:text-emerald-400 hover:underline">
-            Claude Code — MCP server (npx @openreef/mcp) →
+            Claude Code — MCP server (npx @openrf/mcp) →
           </Link>
           <Link href="https://github.com/openrf-io/open-reef/tree/main/skill" target="_blank" rel="noopener noreferrer"
             className="text-xs text-emerald-600 dark:text-emerald-400 hover:underline">
