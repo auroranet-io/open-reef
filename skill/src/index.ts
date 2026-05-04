@@ -1,4 +1,4 @@
-const BASE_URL = process.env.OPENREEF_BASE_URL ?? "https://openreef.dev";
+const BASE_URL = process.env.OPENREEF_BASE_URL ?? "https://openrf.io";
 const TOKEN = process.env.OPENREEF_TOKEN;
 
 interface Entry {

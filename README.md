@@ -103,7 +103,7 @@ Add to `~/.claude.json` or your project's `.mcp.json`:
       "command": "npx",
       "args": ["-y", "@openreef/mcp"],
       "env": {
-        "OPENREEF_TOKEN": "<token from openreef.dev settings>"
+        "OPENREEF_TOKEN": "<token from openrf.io settings>"
       }
     }
   }

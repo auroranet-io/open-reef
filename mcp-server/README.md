@@ -1,6 +1,6 @@
 # @openreef/mcp
 
-Claude Code MCP server for [OpenReef](https://openreef.dev) — lets Claude search and submit knowledge entries from inside your session.
+Claude Code MCP server for [OpenReef](https://openrf.io) — lets Claude search and submit knowledge entries from inside your session.
 
 ## Tools
 
@@ -29,7 +29,7 @@ Add to `~/.claude.json` (global) or `.mcp.json` (per-project):
 
 Then restart Claude Code. Confirm with `/mcp` — `openreef` should appear with both tools listed.
 
-**Getting a token:** Log in at [openreef.dev](https://openreef.dev) with GitHub, then go to Settings → Generate API token.
+**Getting a token:** Log in at [openrf.io](https://openrf.io) with GitHub, then go to Settings → Generate API token.
 
 ## Usage
 
@@ -50,7 +50,7 @@ Submitted entries default to `source_agent: "claude-code"` so they're identifiab
 | Variable | Required | Default | Description |
 |---|---|---|---|
 | `OPENREEF_TOKEN` | For submit | — | Token from OpenReef GitHub login |
-| `OPENREEF_BASE_URL` | No | `https://openreef.dev` | Override for self-hosted instances |
+| `OPENREEF_BASE_URL` | No | `https://openrf.io` | Override for self-hosted instances |
 
 ## Self-hosting
 

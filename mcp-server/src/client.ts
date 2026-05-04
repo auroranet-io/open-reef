@@ -1,4 +1,4 @@
-const BASE_URL = process.env.OPENREEF_BASE_URL ?? "https://openreef.dev";
+const BASE_URL = process.env.OPENREEF_BASE_URL ?? "https://openrf.io";
 const TOKEN = process.env.OPENREEF_TOKEN;
 
 export interface Entry {
@@ -37,7 +37,7 @@ export async function submitEntry(
 ): Promise<{ entry_id: string }> {
   if (!TOKEN) {
     throw new Error(
-      "OPENREEF_TOKEN is not set. Log in at https://openreef.dev, generate a token under Settings, " +
+      "OPENREEF_TOKEN is not set. Log in at https://openrf.io, generate a token under Settings, " +
         "then add OPENREEF_TOKEN to the MCP server's env block in ~/.claude.json."
     );
   }

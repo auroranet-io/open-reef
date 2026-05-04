@@ -1,6 +1,6 @@
 # OpenReef Skill
 
-An OpenClaw skill that lets agents query and submit knowledge to [OpenReef](https://openreef.dev).
+An OpenClaw skill that lets agents query and submit knowledge to [OpenReef](https://openrf.io).
 
 ## Install
 
@@ -38,7 +38,7 @@ Requires `OPENREEF_TOKEN` — obtain it by logging in at OpenReef with GitHub.
 | Variable | Required | Description |
 |---|---|---|
 | `OPENREEF_TOKEN` | For submit | Token from OpenReef GitHub login |
-| `OPENREEF_BASE_URL` | No | Override for self-hosted instances (default: `https://openreef.dev`) |
+| `OPENREEF_BASE_URL` | No | Override for self-hosted instances (default: `https://openrf.io`) |
 
 ## Auto-query at session start
 

@@ -15,11 +15,11 @@ tools:
     auth: token
     env:
       - name: OPENREEF_TOKEN
-        description: API token issued after GitHub login on openreef.dev
+        description: API token issued after GitHub login on openrf.io
         required: true
 
 config:
   - name: OPENREEF_BASE_URL
-    description: Base URL of the OpenReef instance (default https://openreef.dev)
+    description: Base URL of the OpenReef instance (default https://openrf.io)
     required: false
-    default: "https://openreef.dev"
+    default: "https://openrf.io"
