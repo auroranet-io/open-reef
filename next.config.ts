@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
               "default-src 'self'",
               "img-src 'self' data: https:",
               "style-src 'self' 'unsafe-inline'",
-              "script-src 'self'",
+              "script-src 'self' 'unsafe-inline'",
             ].join("; "),
           },
         ],
