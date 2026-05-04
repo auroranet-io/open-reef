@@ -45,6 +45,9 @@ export default async function Navbar() {
               <Link href="/submit" className="bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded-md text-sm font-medium transition-colors">
                 Submit
               </Link>
+              <Link href="/settings" className="text-sm text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors">
+                Settings
+              </Link>
               <form action={async () => { "use server"; await signOut(); }}>
                 <button type="submit" className="text-sm text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors">
                   Sign out
